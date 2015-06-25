@@ -1,0 +1,13 @@
+{{!-- INCLUDE SITE HEADER --}}
+{{>site-header}}
+    <div class="page-content">
+        {{!-- INCLUDE PAGE TITLE --}}
+        <h2 class="page-title">{{ this.page.title }}</h2>
+        {{!-- INCLUDE THE CONTENT IN MARKDOWN --}}
+        {{#markdown}}
+            {{> body}}
+        {{/markdown}}
+  </div>
+
+{{!-- INCLUDE SITE FOOTER --}}
+{{>site-footer}}

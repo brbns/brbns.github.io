@@ -1,0 +1,8 @@
+<h1 class="main-title">ankur anand</h1>
+<h4 class="sub-title">UX designer and frontend developer</h4>
+
+<div class="post-list">
+      {{#withSort pages 'data.date'}}
+        <li>{{ this.data.title }}</li>
+      {{/withSort}}
+</div>
