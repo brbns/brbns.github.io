@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>banannaaaa</title>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h5 class="header-title">drecodeam</h5>
+            <nav class="header-nav">
+                <li class="header-nav-item">about</li>
+                <li class="header-nav-item">journal</li>
+                <li class="header-nav-item">github</li>
+            </nav>
+        </header>
+
+    <div class="page-content">
+        
+        <h2 class="page-title">writing a theme rendering framework</h2>
+        
+        <p>While working at Pixpa, we decided to rewrite all our themes. 
+The current codebase was written in PHP without any framework or MVC approach in mind, basically quite messy. 
+To be able to rewrite the themes, we first needed a framework that allowed for easier and faster development. While deciding on the stack to be used, we had these considerations in mind : </p>
+<ul>
+<li>Moving to a better templating engine for faster development and reusability. Of the may given options, we settled on handlebars. <ul>
+<li>It has a easier syntax, so that new developers can get up to speed real quick. </li>
+<li>It has support in multiple languages, so migrating in the future would be much easier. </li>
+<li>It had a very good pre-rendering flow using grunt, hence saving on a bit of runtime. </li>
+</ul>
+</li>
+<li>Keeping the build process in the hands of the frontend team, so as they can ensure that the entire assets are as they plan to be. We went along with Grunt without much thinking. </li>
+<li>Writing the CSS using pre-processor for keeping it modular and reusable. There wasn&#39;t much rationale behind using LESS over SASS but our prior experience, we just went ahead with LESS. </li>
+</ul>
+<p>With the basics as to how the Frontend would be managed, we now had to decide on a rendering framework. This would be responsible for using the users&#39; data and rendering the proper HTML for the user. 
+This was a rather tricky part, as our platform is basically a DIY website builder, hence the permutations and combinations of the layouts and users&#39; settings are numerous, and whatever rendering pipeline we went ahead with, had to be based on the fact that it can handle all these options and also any new layouts or settings we introduce in the future. </p>
+<p>Our initial debates were over the fact, wether the rendering should be done on the backend or the frontend, though that debate was shortlived as our backend would need quite some time to update itself to incorporate the discussed changes and we had to move fast. </p>
+<p>Moving the rendering to the clientside, again started off a new debate as to which framework should be used. AngularJS, backbone, knockout etc were our choices. 
+After reading a lot as to how these frameworks are structured and what to be used in what use case, we decided to go for an in house framework to suit our needs.</p>
+<ul>
+<li>Most of the frameworks are opinionated in how to structure your project. While that&#39;s good for people who can comprehend how their project would pan out to be. </li>
+</ul>
+<p><em>Write an explanation of why chose a custom framework</em> </p>
+
+  </div>
+
+
+<div class="footer-container">
+</div>
+
+
+<script src="//use.typekit.net/frq4dbg.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
+

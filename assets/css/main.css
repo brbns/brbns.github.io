@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fredoka One", sans-serif;
+  font-weight: 400;
+  color: #3c3c3c; }
+
+h1 {
+  font-size: 3.9975843648rem; }
+
+h2 {
+  font-size: 2.827145944rem; }
+
+h3 {
+  font-size: 1.999396rem; }
+
+body {
+  font-family: "Muli", serif;
+  font-size: 1.414rem;
+  line-height: 1.5;
+  color: #565656; }
+
+li {
+  padding: 0.5em 0 0 0; }
+
+a {
+  border-bottom: 1px solid #bcbcbc;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  color: inherit;
+  color: #3c3c3c; }
+  a:hover {
+    color: #EC3549; }
+
+body {
+  background: #FFC535; }
+
+.main-title {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  color: #484E60;
+  letter-spacing: 1px; }
+
+.sub-title {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  color: #5e667d; }
+
+.logo-container {
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto 50px auto;
+  width: 100px; }
+  .logo-container object {
+    max-width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
