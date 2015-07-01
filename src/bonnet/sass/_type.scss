@@ -1,13 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(http://fonts.googleapis.com/css?family=Muli);
 
-$type-sans-serif : 'museo-sans', sans-serif;
-$type-serif : 'museo-slab', serif;
+$type-headings : 'Fredoka One', sans-serif;
+$type-para : 'Muli', serif;
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: $type-sans-serif;
+    font-family: $type-headings;
     font-weight: 400;
     color: #3c3c3c;
 }
@@ -17,7 +19,7 @@ h2 { font-size: scale( 3 ); }
 h3 { font-size: scale( 2 ); }
 
 body {
-    font-family: $type-serif;
+    font-family: $type-para;
     font-size: scale( 1 );
     line-height: 1.5;
     color: lighten( #3c3c3c, 10% );

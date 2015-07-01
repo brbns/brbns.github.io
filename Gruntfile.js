@@ -80,12 +80,39 @@ module.exports = function (grunt) {
         files : './src/bonnet/**/*.hbs',
         tasks : ['assemble']
       }
+    },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          './dist/assets/js/vendor.min.js': ['./src/bonnet/js/vendor/*.js'],
+          './dist/assets/js/source.min.js': ['./src/bonnet/js/source/*.js']
+        }
+      }
+    },
+    copy: {
+      images: {
+        files: [
+          // makes all src relative to cwd
+          {expand: true, cwd: './src/bonnet/images/', src: ['**'], dest: './dist/assets/images/'},
+        ],
+      },
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        branch: 'master',
+        repo: 'git@github.com:brbns/brbns.github.io.git'
+      },
+      src: ['**']
     }
   });
 
   grunt.loadNpmTasks('assemble');
 
   /* grunt tasks */
-  grunt.registerTask('default', ['assemble', 'sass', 'connect' ]);
+  grunt.registerTask('default', ['assemble', 'sass', 'uglify', 'copy' ]);
 
 };
